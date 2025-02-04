@@ -1,10 +1,7 @@
-import { useForm, useFormContext } from "react-hook-form";
 import { FormContainer, MinutesAmountInput, TaskInput } from "./style";
-// import * as zod from "zod";
 import { useContext } from "react";
-import { CyclesContext } from "../..";
-
-// type newCycleFormData = zod.infer<typeof newSycleFormValidationSchema>;
+import { useFormContext } from "react-hook-form";
+import { CyclesContext } from "../../../../contexts/CyclesContext";
 
 export function NewCycleForm() {
   const { activeCycle } = useContext(CyclesContext);
